@@ -9,6 +9,7 @@ COPY --from=docker.io/docker/compose-bin:latest@sha256:2f9a25e681af058b800a39f7f
 COPY --from=docker/buildx-bin@sha256:ead27bfcde6308a757b4a5a4a931937363c1fa0091f7e2994b9114521853cf69 /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 
 COPY xidel /usr/bin/xidel
+RUN chmod +x /usr/bin/xidel
 
 RUN sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/fedora-cisco-openh264.repo
 
