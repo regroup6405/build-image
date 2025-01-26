@@ -4,8 +4,6 @@ COPY --from=gcr.io/projectsigstore/cosign:v2 /ko-app/cosign /usr/local/bin/cosig
 
 COPY --from=docker.io/mikefarah/yq:latest /usr/bin/yq /usr/bin/yq
 
-COPY --from=docker.io/docker/compose-bin:latest /docker-compose /docker-compose
-
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 
 COPY xidel /usr/bin/xidel
