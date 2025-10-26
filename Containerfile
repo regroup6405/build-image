@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora:41
+FROM quay.io/fedora/fedora:43
 
 COPY --from=ghcr.io/sigstore/cosign/cosign:v2.4.1 /ko-app/cosign /usr/local/bin/cosign
 
