@@ -26,6 +26,7 @@ RUN dnf update -y && dnf install -y --nodocs --setopt install_weak_deps=False \
     iputils \
     shellcheck \
     sshpass \
+    transmission-common \
     which \
     wget \
     yt-dlp \
