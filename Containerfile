@@ -20,6 +20,7 @@ RUN dnf update -y && dnf install -y --nodocs --setopt install_weak_deps=False \
     iproute \
     moby-engine \
     net-tools \
+    node \
     openssl \
     openssh-clients \
     python3-pip \
