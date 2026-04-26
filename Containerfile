@@ -1,6 +1,6 @@
 FROM quay.io/fedora/fedora:43
 
-COPY --from=ghcr.io/sigstore/cosign/cosign:v2.4.1 /ko-app/cosign /usr/local/bin/cosign
+COPY --from=ghcr.io/sigstore/cosign/cosign:v2.6.1 /ko-app/cosign /usr/local/bin/cosign
 
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 
